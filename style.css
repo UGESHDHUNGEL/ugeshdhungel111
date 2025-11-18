@@ -1,0 +1,75 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background: #2b6cb0;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 36px;
+}
+
+/* Main headings */
+h1, h2 {
+    color: #2b6cb0;
+    margin-left: 20px;
+}
+
+/* Paragraph styling */
+p {
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Table styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #2b6cb0;
+    color: white;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background: #edf2f7;
+}
+
+/* Skills list */
+ul {
+    list-style-type: square;
+    margin: 20px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Add subtle hover effect */
+table tr:hover {
+    background: #dbeafe;
+}
