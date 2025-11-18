@@ -1,22 +1,22 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 50;
+    padding: 50;
     background: #f4f4f4;
     color: #333;
 }
 
 
 header {
-    background: #2b6cb0;
+    background: #78e3e7;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    color: white;
+    color: rgb(216, 253, 51);
     font-size: 36px;
 }
 
