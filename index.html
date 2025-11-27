@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ugesh Dhungel - Professional Portfolio</title>
+    <title>Ugesh Dhungel -  Portfolio</title>
 
     <!-- Icons & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -52,7 +52,7 @@
     <!-- HERO SECTION -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to My <span>Professional</span> Portfolio</h1>
+            <h1>Welcome to <br><span>My</span> <br>Portfolio</h1>
             <p>I create digital experiences that are functional, beautiful, and user-friendly</p>
 
             <div class="cta-buttons">
@@ -60,7 +60,7 @@
                 <a href="#projects" class="btn secondary">View My Work</a>
             </div>
         </div>
-
+      <!--floting card-->
         <div class="hero-visual">
             <div class="floating-card card-1">
                 <i class="fas fa-code"></i>
@@ -220,13 +220,13 @@
             <h2 class="section-title">Projects I Have Done</h2>
 
             <div class="slider">
-                <img src="unnamed.webp" class="slide active" alt="Project 1">
+                <img src="unnamed.webp" class="slide active" alt="Project 1">              
                 <img src="3D.jpg" class="slide" alt="Project 2">
                 <img src="website.png" class="slide" alt="Project 3">
             </div>
 
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
         </div>
     </section>
 
@@ -312,7 +312,7 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
+    <!--CONTACT-->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
@@ -421,7 +421,7 @@
             </div>
         </div>
     </footer>
-
+    
     <!-- JavaScript File -->
     <script src="main.js"></script>
 

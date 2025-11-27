@@ -1,6 +1,4 @@
-// ----------------------------
-// THEME SWITCHER
-// ----------------------------
+
 const body = document.body;
 const btn = document.getElementById("themeBtn");
 
@@ -24,10 +22,8 @@ if (btn) {
         }
     });
 }
-
-// ----------------------------
 // SKILL BAR ANIMATION
-// ----------------------------
+
 const skillBars = document.querySelectorAll('.skill-progress');
 
 function animateSkillBars() {
@@ -51,10 +47,8 @@ const skillsSection = document.querySelector('.skills-section');
 if (skillsSection) {
     observer.observe(skillsSection);
 }
-
-// ----------------------------
 // SMOOTH SCROLLING
-// ----------------------------
+
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.main ul li a');
     
@@ -76,9 +70,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// ----------------------------
 // CONTACT FORM HANDLING
-// ----------------------------
+
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
@@ -148,16 +141,15 @@ if (contactForm) {
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
 
-                // Optional: Redirect to form-details page
-                // window.location.href = "form-details.html";
+               
             }, 1500);
         }
     });
 }
 
-// ----------------------------
+
 // FORM VALIDATION STYLING
-// ----------------------------
+
 function setupFormValidation() {
     const formInputs = document.querySelectorAll('#contactForm input, #contactForm textarea');
     
@@ -543,40 +535,26 @@ function drawClickEffect(x, y) {
 
 // Handle window resize for canvas
 window.addEventListener('resize', function() {
-    // Redraw canvas on resize to maintain quality
+   
     drawSkillsChart();
 });
 
-let  = 0;
-const slider = document.querySelector(".slider");
-const totalImages = document.querySelectorAll(".slider img").length;
 
-document.querySelector(".next").addEventListener("click", () => {
-    index++;
-    if (index >= totalImages) index = 0;
-    updateSlider();
-});
-
-document.querySelector(".prev").addEventListener("click", () => {
-    index--;
-    if (index < 0) index = totalImages - 1;
-    updateSlider();
-});
-
-function updateSlider() {
-    slider.style.transform = `translateX(-${index * 100}%)`;
-}
-let slides = document.querySelectorAll(".slide");
 let index = 0;
+showSlide(index);
 
-document.getElementById("nextBtn").addEventListener("click", () => {
-    slides[index].classList.remove("active");
-    index = (index + 1) % slides.length;
-    slides[index].classList.add("active");
-});
+function moveSlide(step) {
+    index += step;
+    showSlide(index);
+}
 
-document.getElementById("prevBtn").addEventListener("click", () => {
-    slides[index].classList.remove("active");
-    index = (index - 1 + slides.length) % slides.length;
+function showSlide(i) {
+    let slides = document.querySelectorAll(".slide");
+
+    if (i >= slides.length) index = 0;
+    if (i < 0) index = slides.length - 1;
+
+    slides.forEach(slide => slide.classList.remove("active"));
     slides[index].classList.add("active");
-});
+}
+
